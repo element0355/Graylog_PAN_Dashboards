@@ -2700,7 +2700,7 @@
                 },
                 "query": {
                   "type": "elasticsearch",
-                  "query_string": "" AND NOT URLFilename:\\\"crl* AND NOT URLFilename:\\\"assets.msn.com* AND NOT URLFilename:\\\"a1ewu* AND NOT Application:\"steam\" AND NOT Application:\"origin\" AND NOT URLFilename:\\\"content-autofill* AND NOT Application:\"youtube-base\" AND NOT Application:\"gmail-base\" AND NOT URLFilename:\\\"clients* AND NOT Application:google* AND NOT URLFilename:\\\"safebrowsing.google* AND NOT Application:\"ms-update\" AND NOT Application:\"ocsp\" AND NOT Category:\"content-delivery-networks\" AND NOT Category:\"search-engines\""
+                  "query_string": ""
                 },
                 "streams": [],
                 "config": {
