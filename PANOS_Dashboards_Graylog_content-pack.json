@@ -204,7 +204,7 @@
                 {
                   "query": {
                     "type": "elasticsearch",
-                    "query_string": "NOT source_nat_ip_city_name:\"Spokane\""
+                    "query_string": ""
                   },
                   "name": "chart",
                   "timerange": {
@@ -620,7 +620,7 @@
                 {
                   "query": {
                     "type": "elasticsearch",
-                    "query_string": "(source_ip: 192.168.1.* OR source_ip: 10.*) AND (DestinationZone:\"Untrust-L3\")"
+                    "query_string": "(source_ip: 192.168.1.250 OR source_ip: 10.*) AND (DestinationZone:\"Untrust-L3\")"
                   },
                   "name": "chart",
                   "timerange": {
@@ -1011,7 +1011,7 @@
                 {
                   "query": {
                     "type": "elasticsearch",
-                    "query_string": "(NOT \"dns\" AND NOT \"incomplete\" AND NOT \"ssl\" AND NOT \"insufficient-data\" AND NOT \"not-applicable\") AND (SourceAddress:\"192.168.1.98\")"
+                    "query_string": "(NOT \"dns\" AND NOT \"incomplete\" AND NOT \"ssl\" AND NOT \"insufficient-data\" AND NOT \"not-applicable\") AND (SourceAddress:\"192.168.1.250\")"
                   },
                   "name": "chart",
                   "timerange": {
@@ -2670,7 +2670,7 @@
                 },
                 "query": {
                   "type": "elasticsearch",
-                  "query_string": "SourceAddress:\"192.168.1.2\""
+                  "query_string": "SourceAddress:\"192.168.1.250\""
                 },
                 "streams": [],
                 "config": {
@@ -2793,7 +2793,7 @@
                 },
                 "query": {
                   "type": "elasticsearch",
-                  "query_string": "NOT \"YOUPOLICYNAMEHERE\" AND SourceAddress:\"192.168.1.2\""
+                  "query_string": "NOT \"YOUPOLICYNAMEHERE\" AND SourceAddress:\"192.168.1.250\""
                 },
                 "streams": [],
                 "config": {
